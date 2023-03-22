@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+	<link rel="stylesheet" type="text/css" href="css/registro.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<nav>
+        <!--Lista desordenada que definen las paginas que queremos que
+        navegen los usuarios-->
+        <a href="index.html"> 
+            <image src="img/logo.png" class="logo" alt="logo" width="190" heigth="190"></image>
+        </a>
+        <ul>
+            <li><a href="#">Catalogo</a>
+            </li>
+            <li><a href="gf.html">Registro</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#" class="cta">Carrito</a></li>
+			<li><a href="#" class="cta">Tabla de medidas</a></li>
+        </ul>
+    </nav>
+	<!------------------------------------------------------------------------------------------------------------------------------------>
+    <div class ="contact_form"> 
+		<div class ="formulario">
+			<h1>Formulario de registro</h1>
+			<form action="Formulario.php" method="post">
+				<p>
+					<label for="nombre" class="colocar_nombre">
+						Nombre
+
+						<!-- el span se utiliza como una regla para definir un contenedor en linea
+							el cual nos sirve para aplicar estilo sobre el texto "span=abarcar"-->
+
+						<span class="obligatorio">*</span>
+						<input type="text" name="introducir_nombre" id="nombre" 
+						required="obligatorio" placeholder="ingresa tu Nombre">
+					</label>
+				</p>
+				<p>
+					<label for="email" class="colocar_email">
+						Correo
+						<span class="obligatorio">*</span>
+						<input type="email" name="introducir_email" id="email" 
+						required="obligatorio" placeholder="ingresa tu email">
+					</label>
+				</p>
+				<p>
+					<label for="telefone" class="colocar_telefono">
+						Telefono
+						<span class="obligatorio">*</span>
+						<input type="tel" name="introducir_telefono" id="telefono" 
+						required="obligatorio" placeholder="ingresa tu telefono">
+					</label>
+				</p>
+				<p>
+					<label for="website" class="colocar_website">
+						Fecha de nacimiento
+						<input type="date" name="introducir_date" id="date" 
+						 placeholder="ingresa tu fecha de nacimiento">
+					</label>
+				</p>
+				<p>
+					<label for="asunto" class="colocar_asunto">
+						Contraseña
+						<span class="obligatorio">*</span>
+						<input type="password" name="introducir_contraseña" id="contraseña" 
+						 required="obligatorio" placeholder="Escribe tu contraseña">
+					</label>
+				</p>
+				<button type="submit" name="enviar_formulario" id="enviar">
+					<p>Registrar</p>
+				</button>
+				<p class="Aviso">
+					<span class="obligatorio">*</span> Los campos son obligatorios
+				</p>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

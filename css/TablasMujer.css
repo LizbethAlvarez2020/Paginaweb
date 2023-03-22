@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto');
+ body {
+	height: 100%;
+	font-family: 'Noto Sans', sans-serif;
+	/*background:linear-gradient(to left, rgb(150,129,44),rgb(33,76,100));*/
+	background-image: url(../img/CapaCielo.png);
+}
+.contact_form {
+	width: 450px;
+	height: auto;
+	margin: 40px auto;
+	border-radius: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background-color: #fbfbfb ;
+	padding-left: 30px;
+}
+
+table {
+    width: 20%;
+   
+    border: 5px solid rgb(150,129,44);
+   
+ }
+
+
+ th, td {
+    width: 25%;
+
+    text-align: left;
+    vertical-align: top;
+    border: 3px solid rgb(33,76,100);
+ }
+ h1{
+	
+	color: rgb(33,76,100);
+}
+h3{
+	
+	color: rgb(150,129,44);;
+}
